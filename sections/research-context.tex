@@ -1,4 +1,7 @@
 \section{Research Context}
 
-Log analysis can be a complex task. With the emergence of microservice architectures this task has become even more difficult. This is mainly due to the the distributed nature of microservices and the fact that they can be written in many languages and interact with each other in many new ways when compared to a monolithic architecture.
+Log analysis can be a complex task. With the emergence of microservice architectures this task has become even more difficult. This is mainly due to the the distributed nature of microservices and the fact that they can be written in many languages and interact with each other in many different ways when compared to a monolithic architecture.
 
+When microservice environments grow very large they can emit vast amount of logs daily or even hourly. To process this amount of data in real time would be impossible for commodity hardware, which firmly plants this problem in the realm of big data analysis.
+
+One of the current solutions to this problem is utilizing an ELK stack. This stands for Elastic Search, Logging and Kibana. This is a great solution however it requires a lot of manual searching of logs over many different services to try and identify sources of problems. This can be a time consuming task and can often lead to a misdiagnoses. A better system would be one that proactively tries to analyze logs for you, and present a developer or devops team with possible points in time that are considered suspicious.
